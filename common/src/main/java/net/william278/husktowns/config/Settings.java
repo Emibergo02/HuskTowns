@@ -318,6 +318,14 @@ public class Settings {
     @YamlKey("towns.prune_inactive_towns.prune_after_days")
     private int pruneInactiveTownDays = 90;
 
+    @YamlComment("The timezone to use for calculating retained chunks")
+    @YamlKey("towns.chunks_retain_time_zone")
+    private String retainTimeZone = "UTC";
+
+    @YamlComment("The timezone to use for calculating retained chunks")
+    @YamlKey("towns.chunks_retain_time")
+    private String retainTaskTime = "00:00:00";
+
 
     @SuppressWarnings("unused")
     private Settings() {
@@ -602,6 +610,14 @@ public class Settings {
 
     public boolean guiEnabled() {
         return menuType != MenuType.CHAT;
+    }
+
+    public String getRetainTimeZone() {
+        return retainTimeZone;
+    }
+
+    public String getRetainTaskTime() {
+        return retainTaskTime;
     }
 
     public enum MenuType {

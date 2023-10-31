@@ -19,6 +19,7 @@
 
 package net.william278.husktowns;
 
+import dev.unnm3d.kalyaclaims.KalyaClaims;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
 import net.roxeez.advancement.AdvancementManager;
 import net.roxeez.advancement.display.BackgroundType;
@@ -200,6 +201,7 @@ public class BukkitHuskTowns extends JavaPlugin implements HuskTowns, BukkitTask
         initializeMetrics();
         log(Level.INFO, "Enabled HuskTowns v" + getVersion());
         InvUI.getInstance().setPlugin(this);
+        new KalyaClaims(this);
     }
 
     @Override

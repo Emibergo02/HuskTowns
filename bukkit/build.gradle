@@ -21,6 +21,7 @@ dependencies {
     compileOnly 'com.github.MilkBowl:VaultAPI:1.7.1'
     compileOnly 'me.clip:placeholderapi:2.11.4'
     compileOnly 'net.luckperms:api:5.4'
+    compileOnly 'io.lettuce:lettuce-core:6.2.5.RELEASE'
 
     testImplementation 'com.github.seeseemelk:MockBukkit-v1.16:1.5.2'
     testImplementation 'de.themoep:minedown-adventure:1.7.2-SNAPSHOT'
